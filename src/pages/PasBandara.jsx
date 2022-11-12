@@ -6,6 +6,7 @@ import UploadFile from "../components/UploadFIle";
 
 const PasBandara = () => {
   const [enabled, setEnabled ] = useState(false);
+  const [email, setEmail] = useState("")
   const [msg, setMsg] = useState({
     file1:null,
     file2:null,
@@ -115,9 +116,26 @@ const PasBandara = () => {
           </div>
         </div>
 
+        <div className="mt-10">
+        <label className="block">
+                <span className="block text-slate-700 mb-1">
+                  <b>Email</b> <span className="text-red-600">*</span>
+                </span>
+                <input
+                  type="email"
+                  placeholder="Cth: example@gmail.com"
+                  className="w-full px-3 py-2 placeholder-gray-300 border rounded-md focus:outline-none 
+                     border-gray-400 focus:ring-blue-500 focus:border-blue-700"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </label>
+        </div>
+
         <div>
           <div className="mt-10 mb-2 font-semibold text-xl">
-            <h1>Upload Surat Permohonan (Dari Kantor Admin Bandara)</h1>
+            <h1>Upload Surat Permohonan (Dari Kantor Admin Bandara) <span className="text-red-600">*</span></h1>
           </div>
           <div className="w-full">
             <UploadFile
@@ -134,7 +152,7 @@ const PasBandara = () => {
 
         <div>
           <div className="mt-10 mb-2 font-semibold text-xl">
-            <h1>Pas Foto ukuran 3x4 cm</h1>
+            <h1>Pas Foto ukuran 3x4 cm <span className="text-red-600">*</span></h1>
           </div>
           <div className="w-full">
             <UploadFile
@@ -151,7 +169,7 @@ const PasBandara = () => {
 
         <div>
           <div className="mt-10 mb-2 font-semibold text-xl">
-            <h1>Surat Pernyataan dari atasan bekerja</h1>
+            <h1>Surat Pernyataan dari atasan tempat bekerja <span className="text-red-600">*</span></h1>
           </div>
           <div className="w-full">
             <UploadFile
@@ -168,7 +186,7 @@ const PasBandara = () => {
 
         <div>
           <div className="mt-10 mb-2 font-semibold text-xl">
-            <h1>Daftar riwayat hidup</h1>
+            <h1>Daftar riwayat hidup <span className="text-red-600">*</span></h1>
           </div>
           <div className="w-full">
             <UploadFile
@@ -185,7 +203,7 @@ const PasBandara = () => {
 
         <div>
           <div className="mt-10 mb-2 font-semibold text-xl">
-            <h1>Identitas diri (KTP, Paspor atau KITAS)</h1>
+            <h1>Identitas diri (KTP, Paspor atau KITAS) <span className="text-red-600">*</span></h1>
           </div>
           <div className="w-full">
             <UploadFile
@@ -219,7 +237,7 @@ const PasBandara = () => {
 
         <div>
           <div className="mt-10 mb-2 font-semibold text-xl">
-            <h1>Surat Keterangan Pegawai Kontrak (Copy)</h1>
+            <h1>Surat Keterangan Pegawai Kontrak <span className="text-red-600">*</span></h1>
           </div>
           <div className="w-full">
             <UploadFile
