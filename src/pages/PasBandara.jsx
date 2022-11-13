@@ -4,6 +4,7 @@ import { toast } from 'react-toastify';
 import { images } from "../constants";
 import logo from "../assets/logo.png";
 import UploadFile from "../components/UploadFIle";
+import Loading from "../components/Loading";
 
 const PasBandara = () => {
   const [enabled, setEnabled ] = useState(false);
@@ -167,7 +168,7 @@ const PasBandara = () => {
   return (
     <>
     {
-        loadingApi ? <h1>Loading......</h1> :
+        loadingApi ? <div><Loading /></div> :
         <div>
         <div className="relative">
             <img
