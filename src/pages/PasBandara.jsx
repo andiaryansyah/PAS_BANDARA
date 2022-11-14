@@ -176,10 +176,10 @@ const PasBandara = () => {
             alt="pas-bandara"
             className="w-full h-72"
             />
-            <div className="absolute right-8 left-px top-10 text-center text-white uppercase flex flex-col justify-center items-center">
-            <img src={logo} alt="logo" className="mb-3 h-16 w-14" />
-            <h1 className="mb-3 font-bold text-hxl">Permohonan Pas Bandara</h1>
-            <h3 className="font-semibold">
+            <div className="absolute right-0 left-px top-12 text-center text-white uppercase flex flex-col justify-center items-center">
+            <img src={logo} alt="logo" className="mb-6 h-16 w-14" />
+            <h1 className="font-bold text-2xl md:text-3xl lg:text-hxl">Permohonan Pas Bandara</h1>
+            <h3 className="font-semibold text-xs mt-3 md:mt-5 md:text-base lg:mt-7">
                 Badan layanan umum UPBU Sultan Bantilan
             </h3>
             </div>
