@@ -14,10 +14,10 @@ const UploadFile = ({ id, name, file, msg, onChange, onDelete, note, accepted, l
     <>
       {!msg && file ? (
         <div className="px-10 flex justify-between items-center w-full h-28 bg-blue-50 rounded-lg border-2 border-blue-400 border-solid cursor-pointer">
-          <div className="flex items-center">
+          <div className="flex items-center w-11/12 md:w-full">
             { getExtension(file["name"]).toLowerCase() === "pdf" ? <img src={images.formatPDF} alt="pdf" /> : <img src={images.formatJPG} alt="jpg" /> }
-            <div className="ml-2">
-                <p className="font-semibold ml-2">{file.name}</p>
+            <div className="ml-2 w-1/2 md:w-full">
+                <p className="font-semibold ml-2 truncate">{file.name}</p>
                 <p className="ml-2 text-gray-500">{file.size / 1000} kb</p>
             </div>
 
