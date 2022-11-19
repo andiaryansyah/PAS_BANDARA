@@ -170,7 +170,8 @@ const PasBandara = () => {
     {
         loadingApi ? <div><Loading /></div> :
         <div>
-        <div className="relative mx-0 xl:mx-[400px]">
+        <div className="relative flex flex-col items-center">
+            <div className="w-full md:w-1/2">
             <img
             src={images.PasBandara}
             alt="pas-bandara"
@@ -178,14 +179,16 @@ const PasBandara = () => {
             />
             <div className="absolute right-0 left-px top-12 text-center text-white uppercase flex flex-col justify-center items-center">
             <img src={logo} alt="logo" className="mb-6 h-16 w-14" />
-            <h1 className="font-bold text-2xl md:text-3xl lg:text-hxl xl:text-4xl">Permohonan Pas Bandara</h1>
-            <h3 className="font-semibold text-xs mt-3 md:mt-5 md:text-base lg:mt-7">
+            <h1 className="font-bold text-2xl md:text-xl lg:text-3xl xl:text-4xl">Permohonan Pas Bandara</h1>
+            <h3 className="font-semibold text-xs mt-3 md:mt-5 md:text-xs lg:text-base lg:mt-7">
                 Badan layanan umum UPBU Sultan Bantilan
             </h3>
             </div>
+            </div>
         </div>
 
-        <div className="m-10 xl:mx-[400px] xl:my-[70px]">
+        <div className="m-10 flex flex-col items-center" >
+            <div className="w-full md:w-1/2">
             <h1 className="font-semibold text-2xl mb-1">
             Form Permohonan PAS Bandara
             </h1>
@@ -402,6 +405,7 @@ const PasBandara = () => {
             </button>
             </div>
         </div>
+            </div>
         </div>
     }
     </>
