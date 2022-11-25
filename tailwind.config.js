@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -11,6 +13,9 @@ module.exports = {
       fontSize: {
         hxl:'48px',
     },
+    fontFamily: {
+      roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans]
+    }
     },
   },
   
