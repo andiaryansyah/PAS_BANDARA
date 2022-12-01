@@ -217,7 +217,7 @@ const PasBandara = () => {
                 <p>Unduh form persyaratan :</p>
                 <div>
                   <a
-                    href="https://drive.google.com/u/0/uc?id=161yFXdTcjg9OMdljE5uG_aUbXEQO0CfX&export=download"
+                    href="https://res.cloudinary.com/sisfo-uinam/image/upload/v1669865200/sample_jwkwyg.pdf"
                     download="Contoh Surat Permohonan"
                     target="_blank"
                     rel="noreferrer"
@@ -228,7 +228,7 @@ const PasBandara = () => {
                 </div>
                 <div>
                   <a
-                    href="https://drive.google.com/u/0/uc?id=161yFXdTcjg9OMdljE5uG_aUbXEQO0CfX&export=download"
+                    href="https://res.cloudinary.com/sisfo-uinam/image/upload/v1669865200/sample_jwkwyg.pdf"
                     download="Contoh surat pernyataan dari atasan ditempat bekerja"
                     target="_blank"
                     rel="noreferrer"
