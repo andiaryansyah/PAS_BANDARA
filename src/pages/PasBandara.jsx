@@ -199,7 +199,7 @@ const PasBandara = () => {
                 Pengajuan PAS Bandara
               </h1>
               <h3 className="font-semibold text-xs mt-3 md:mt-5 md:text-base lg:mt-7">
-                UPBU Sultan BantilanTolitoli
+                UPBU Sultan Bantilan Tolitoli
               </h3>
             </div>
           </div>
