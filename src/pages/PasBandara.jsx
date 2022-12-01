@@ -196,11 +196,10 @@ const PasBandara = () => {
             <div className="absolute right-0 left-px top-12 text-center text-white uppercase flex flex-col justify-center items-center font-roboto">
               <img src={logo} alt="logo" className="mb-6 h-16 w-14" />
               <h1 className="font-bold text-2xl md:text-3xl lg:text-hxl xl:text-4xl">
-                Pengajuan Pas Bandara
+                Pengajuan PAS Bandara
               </h1>
               <h3 className="font-semibold text-xs mt-3 md:mt-5 md:text-base lg:mt-7">
-                Unit Penyelenggara Bandar Udara Kelas III Sultan Bantilan
-                Tolitoli
+                UPBU Sultan BantilanTolitoli
               </h3>
             </div>
           </div>
