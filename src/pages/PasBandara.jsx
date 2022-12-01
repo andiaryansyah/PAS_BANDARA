@@ -207,10 +207,10 @@ const PasBandara = () => {
           <div className="m-10 flex flex-col items-center">
             <div className="w-full md:w-1/2">
               <h1 className="font-semibold text-2xl mb-1">
-                Form Permohonan PAS Bandara
+                Form Pengajuan PAS Bandara
               </h1>
               <p className="text-gray-400">
-                Silahkan lengkapi dokumen permohonan anda di bawah ini
+                Silahkan lengkapi dokumen pengajuan anda di bawah ini
               </p>
 
               <div className="rounded bg-blue-50 px-8 py-5 " role="alert">
