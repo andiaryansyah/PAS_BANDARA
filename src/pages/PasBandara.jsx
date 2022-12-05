@@ -196,11 +196,10 @@ const PasBandara = () => {
             <div className="absolute right-0 left-px top-12 text-center text-white uppercase flex flex-col justify-center items-center font-roboto">
               <img src={logo} alt="logo" className="mb-6 h-16 w-14" />
               <h1 className="font-bold text-2xl md:text-3xl lg:text-hxl xl:text-4xl">
-                Pengajuan Pas Bandara
+                Pengajuan PAS Bandara
               </h1>
               <h3 className="font-semibold text-xs mt-3 md:mt-5 md:text-base lg:mt-7">
-                Unit Penyelenggara Bandar Udara Kelas III Sultan Bantilan
-                Tolitoli
+                UPBU Sultan Bantilan Tolitoli
               </h3>
             </div>
           </div>
@@ -208,17 +207,17 @@ const PasBandara = () => {
           <div className="m-10 flex flex-col items-center">
             <div className="w-full md:w-1/2">
               <h1 className="font-semibold text-2xl mb-1">
-                Form Permohonan PAS Bandara
+                Form Pengajuan PAS Bandara
               </h1>
               <p className="text-gray-400">
-                Silahkan lengkapi dokumen permohonan anda di bawah ini
+                Silahkan lengkapi dokumen pengajuan anda di bawah ini
               </p>
 
               <div className="rounded bg-blue-50 px-8 py-5 " role="alert">
                 <p>Unduh form persyaratan :</p>
                 <div>
                   <a
-                    href="https://drive.google.com/u/0/uc?id=161yFXdTcjg9OMdljE5uG_aUbXEQO0CfX&export=download"
+                    href="https://res.cloudinary.com/sisfo-uinam/image/upload/v1669865200/sample_jwkwyg.pdf"
                     download="Contoh Surat Permohonan"
                     target="_blank"
                     rel="noreferrer"
@@ -229,7 +228,7 @@ const PasBandara = () => {
                 </div>
                 <div>
                   <a
-                    href="https://drive.google.com/u/0/uc?id=161yFXdTcjg9OMdljE5uG_aUbXEQO0CfX&export=download"
+                    href="https://res.cloudinary.com/sisfo-uinam/image/upload/v1669865200/sample_jwkwyg.pdf"
                     download="Contoh surat pernyataan dari atasan ditempat bekerja"
                     target="_blank"
                     rel="noreferrer"
