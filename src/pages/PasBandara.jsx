@@ -6,12 +6,14 @@ import logo from "../assets/logo.png";
 import UploadFile from "../components/UploadFIle";
 import Loading from "../components/Loading";
 import {AiOutlineHome} from 'react-icons/ai';
+import Input from 'react-phone-number-input/input';
 
 const PasBandara = () => {
   const [enabled, setEnabled] = useState(false);
   const [loadingApi, setLoadingApi] = useState(false);
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [msg, setMsg] = useState({
     file1: null,
     file2: null,
@@ -46,6 +48,7 @@ const PasBandara = () => {
   const handleSubmit = () => {
     const data = {
       email: email,
+      no_hp:phone,
       surat_permohonan: payload.file1,
       foto: payload.file2,
       pernyataan_atasan: payload.file3,
@@ -165,14 +168,14 @@ const PasBandara = () => {
       files.file4 &&
       files.file5 &&
       files.file7 &&
-      email &&
+      email && phone &&
       !loading
     ) {
       setEnabled(true);
     } else {
       setEnabled(false);
     }
-  }, [files, email, loading]);
+  }, [files, email, loading, phone]);
 
   return (
     <>
@@ -253,6 +256,27 @@ const PasBandara = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                   />
+                </label>
+              </div>
+
+              <div>
+              <label className="block">
+                  <span className="block text-slate-700 mb-1 mt-3">
+                    <b>No. Telp</b> <span className="text-red-600">*</span>
+                  </span>
+                  <div className="flex items-center px-3 py-2 border rounded-md focus:outline-none 
+                            border-gray-400 focus:ring-blue-500 focus:border-blue-700">
+                    <span className="mr-3">+62</span>
+                    <Input 
+                      country="ID"
+                      placeholder="cth : 81234563789"
+                      className="w-full focus:outline-none placeholder-gray-300"
+                      international
+                      value={phone}
+                      onChange={setPhone}
+                      maxLength={13}
+                      />
+                  </div>
                 </label>
               </div>
 
