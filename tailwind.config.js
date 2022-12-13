@@ -15,7 +15,11 @@ module.exports = {
     },
     fontFamily: {
       roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans]
-    }
+    },
+    borderWidth: {
+      '10': '10px',
+      '16': '16px',
+    },
     },
   },
   

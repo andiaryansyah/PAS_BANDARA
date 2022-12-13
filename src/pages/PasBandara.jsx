@@ -5,8 +5,8 @@ import { images } from "../constants";
 import logo from "../assets/logo.png";
 import UploadFile from "../components/UploadFIle";
 import Loading from "../components/Loading";
-import {AiOutlineHome} from 'react-icons/ai';
-import Input from 'react-phone-number-input/input';
+import { RiHome4Line } from "react-icons/ri";
+import Input from "react-phone-number-input/input";
 import PopupSuccess from "../components/PopupSuccess";
 
 const PasBandara = () => {
@@ -50,7 +50,7 @@ const PasBandara = () => {
   const handleSubmit = () => {
     const data = {
       email: email,
-      no_hp:phone,
+      no_hp: phone,
       surat_permohonan: payload.file1,
       foto: payload.file2,
       pernyataan_atasan: payload.file3,
@@ -71,6 +71,7 @@ const PasBandara = () => {
         //   position: toast.POSITION.TOP_CENTER,
         // });
         setEmail("");
+        setPhone("");
         setFiles({
           ...files,
           file1: null,
@@ -93,7 +94,7 @@ const PasBandara = () => {
           file7: null,
           file8: null,
         });
-        setOpenModal(true)
+        setOpenModal(true);
       })
       .catch((err) => {
         toast.error("Gagal mengirim data. Silahkan coba lagi!", {
@@ -171,7 +172,8 @@ const PasBandara = () => {
       files.file4 &&
       files.file5 &&
       files.file7 &&
-      email && phone &&
+      email &&
+      phone &&
       !loading
     ) {
       setEnabled(true);
@@ -188,11 +190,15 @@ const PasBandara = () => {
         </div>
       ) : (
         <div>
-            <a href="https://sultanbantilanairport.com">
-                <div className="bg-[#182A68] hover:bg-blue-700 rounded-full fixed right-4 bottom-4 z-10">
-                    <AiOutlineHome size={55} className="p-3 text-white cursor-pointer"/>
-                </div>
-            </a>
+          <a href="https://sultanbantilanairport.com">
+          <div className="fixed right-4 bottom-4 z-10 flex items-center group">
+                <span className="tooltip-text hidden group-hover:block bg-gray-300 p-2 rounded-md text-sm font-medium">https://sultanbantilanairport.com</span>
+                <span className="tooltip-text hidden group-hover:block border-gray-300 border-t-8 border-b-8 border-l-16 border-t-transparent border-b-transparent mr-2"></span>
+                <button className="bg-[#182A68] hover:bg-blue-700 rounded-full ">
+                    <RiHome4Line size={50} className="p-3 text-white cursor-pointer"/>
+                </button>
+              </div>
+          </a>
           <div className="relative">
             <img
               src={images.PasBandara}
@@ -263,14 +269,16 @@ const PasBandara = () => {
               </div>
 
               <div>
-              <label className="block">
+                <label className="block">
                   <span className="block text-slate-700 mb-1 mt-3">
                     <b>No. Telp</b> <span className="text-red-600">*</span>
                   </span>
-                  <div className="flex items-center px-3 py-2 border rounded-md focus:outline-none 
-                            border-gray-400 focus:ring-blue-500 focus:border-blue-700">
+                  <div
+                    className="flex items-center px-3 py-2 border rounded-md focus:outline-none 
+                            border-gray-400 focus:ring-blue-500 focus:border-blue-700"
+                  >
                     <span className="mr-3">+62</span>
-                    <Input 
+                    <Input
                       country="ID"
                       placeholder="cth : 81234563789"
                       className="w-full focus:outline-none placeholder-gray-300"
@@ -278,7 +286,7 @@ const PasBandara = () => {
                       value={phone}
                       onChange={setPhone}
                       maxLength={13}
-                      />
+                    />
                   </div>
                 </label>
               </div>
@@ -470,7 +478,7 @@ const PasBandara = () => {
                 >
                   Kirim Permohonan
                 </button>
-                <PopupSuccess openModal={openModal}/>
+                <PopupSuccess openModal={openModal} />
               </div>
             </div>
           </div>
