@@ -7,6 +7,7 @@ import UploadFile from "../components/UploadFIle";
 import Loading from "../components/Loading";
 import {AiOutlineHome} from 'react-icons/ai';
 import Input from 'react-phone-number-input/input';
+import PopupSuccess from "../components/PopupSuccess";
 
 const PasBandara = () => {
   const [enabled, setEnabled] = useState(false);
@@ -44,6 +45,7 @@ const PasBandara = () => {
     file7: null,
     file8: null,
   });
+  const [openModal, setOpenModal] = useState(false);
 
   const handleSubmit = () => {
     const data = {
@@ -65,9 +67,9 @@ const PasBandara = () => {
       data: data,
     })
       .then(({ data }) => {
-        toast.success(data.message, {
-          position: toast.POSITION.TOP_CENTER,
-        });
+        // toast.success(data.message, {
+        //   position: toast.POSITION.TOP_CENTER,
+        // });
         setEmail("");
         setFiles({
           ...files,
@@ -91,6 +93,7 @@ const PasBandara = () => {
           file7: null,
           file8: null,
         });
+        setOpenModal(true)
       })
       .catch((err) => {
         toast.error("Gagal mengirim data. Silahkan coba lagi!", {
@@ -467,6 +470,7 @@ const PasBandara = () => {
                 >
                   Kirim Permohonan
                 </button>
+                <PopupSuccess openModal={openModal}/>
               </div>
             </div>
           </div>
